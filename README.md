@@ -1,2 +1,2 @@
-# tulusha.github.io
+# alokard.github.io
 Tulusha.com Blog
