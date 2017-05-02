@@ -115,7 +115,7 @@ theme = "hugo-identity-theme"
   # Footer settings
   [params.footer]
     # If copyright is not set, author is used
-    # copyright = "Innovation inc"
+    copyright = "Eugene Tulusha"
 
   # Page license
   [params.license]
