@@ -1,12 +1,12 @@
 # Site settings
-baseurl = "http://tulusha.com" #without ending slash
+baseurl = "http://example.org" #without ending slash
 languageCode = "en-us"
-title = "Eugene Tulusha"
+title = "Hugo Identity Theme"
 theme = "hugo-identity-theme"
-# themesDir = "../.."
+themesDir = "../.."
 
 # Enter your tracking code to enable Google Analytics
-# googleAnalytics = "UA-XXXXX-Y"
+googleAnalytics = "UA-XXXXX-Y"
 
 [params]
   
@@ -20,20 +20,36 @@ theme = "hugo-identity-theme"
   favicon_ico_sizes = "16x16 32x32"
   appleicon = "apple.png"
 
+  # Additional options to supplement icons served
+  #favicon_png = "favicon.png"
+  #favicon_png_sizes = "96x96"
+  #favicon_svg = "favicon.svg"
+
+  # Link custom assets relative to /static
+  #custom_js  = [""]
+  #custom_css = ["background.css", "icons.css"]
+
+  # Customization switches
+  # Overwrite FontAwesome: see icons.css
+  #custom_icons = true
+  # Overwrite background: see background.css
+  #custom_background = true
+
   # Personal data
   [params.personal]
     # If name is not set, author is used
-    name = "Eugene Tulusha"
+    name = "Jane Powers"
     # Avatars can be written to images/avatars/
-    avatar = "avatar.jpg"
-    position = "iOS Lead Engineer"
-    livesIn = "[Dnipro, Ukraine](#some-maps-url)"
-    # scope = [
-    #     "Creator of [Moviest iOS app](#)",
-    #     "Blogger on [Medium](#)",
-    #     "Lovely husband for [butiful wife](https://www.instagram.com/vinyarskaya_t/)"
-    #   ]
-    biography = """I have wide experience in software and applications development for Apple devices, especially for iPhones and iPads. During my professional career I developed different applications for iOS platform from mobile games and entertainment through multimedia to enterprise applications for traveling and social networks."""
+    avatar = "jane.jpg"
+    position = "Lead Engineer"
+    livesIn = "[Munich, Germany](#some-maps-url)"
+    scope = [
+        "UX for [member dashboard](#)",
+        "Maintainer for [awesome-project](#)",
+        "Open Source [community management](#)"
+      ]
+    biography = """Jane Powers is plain awesome. He worked at Corp A and B and is open for new work.  
+Even new lines and other markdown styles are working within the bio."""
 
 
 
@@ -52,7 +68,7 @@ theme = "hugo-identity-theme"
     # - click the confirm link in the email from www.formspree.io
     # - you're done. Happy mailing!
 
-    email = "tulusheg@gmail.com"
+    email = "your@email.com"
 
     # It is possible to substitute formspring with other providers
     # as an example the mailout plugin from caddy.
@@ -85,37 +101,22 @@ theme = "hugo-identity-theme"
   [[params.social]]
     title = "Twitter"
     icon = "fa-twitter"
-    link = "https://twitter.com/alokard"
+    link = "#"
 
-  [[params.social]]
-    title = "Facebook"
-    icon = "fa-facebook"
-    link = "http://fb.com/tulusha.zhenia"
-
-  [[params.social]]
-    title = "LinkedIn"
-    icon = "fa-linkedin"
-    link = "https://linkedin.com/in/eugenetulusha/"
-
-  [[params.social]]
-    title = "GitHub"
-    icon = "fa-github"
-    link = "https://github.com/alokard"
-  
   [[params.social]]
     title = "Instagram"
     icon = "fa-instagram"
-    link = "https://instagram.com/alokard"
-
+    link = "#"
+    
   [[params.social]]
-    title = "Medium"
-    icon = "fa-medium"
+    title = "Facebook"
+    icon = "fa-facebook"
     link = "#"
 
   # Footer settings
   [params.footer]
     # If copyright is not set, author is used
-    # copyright = "Innovation inc"
+    copyright = "Innovation inc"
 
   # Page license
   [params.license]
@@ -129,3 +130,12 @@ theme = "hugo-identity-theme"
     # Text will be used to explain the credit
     text = "Design by"
     link = "https://html5up.net"
+
+  # Optional piwik tracking
+  #[params.analytics.piwik]
+  #  URL = "https://stats.example.com"
+  #  ID = "42"
+  #  # Track all subdomains with "*.example.com"
+  #  domain = "www.example.com"
+  #  # Optional integrity check hash
+  #  hash = "sha512-RfeD0pacGTqy9m7U6PgehQfS4cc7SIt+e+P+H5e848kEvB/RW84CUGO3O4O3LNbxjevym6KPUZ8muPsMrI8WIw=="
